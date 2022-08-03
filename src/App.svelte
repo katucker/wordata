@@ -90,7 +90,7 @@
 	}
 	let toaster: Toaster;
 
-	document.title = "Wordle+ | An infinite word guessing game";
+	document.title = "WorData | An infinite data word guessing game";
 </script>
 
 <Toaster bind:this={toaster} />

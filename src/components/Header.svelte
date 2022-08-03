@@ -46,7 +46,7 @@
 			toaster.pop(modeData.modes[$mode].name);
 		}}
 	>
-		wordle+
+		wordata
 	</h1>
 	<div class="icons">
 		{#if showStats}
@@ -65,7 +65,7 @@
 	</div>
 	{#if tutorial}
 		<div transition:scale class="tutorial" on:click={() => dispatch("closeTutPopUp")}>
-			Tap WORDLE+ to change game mode
+			Tap WorData to change game mode
 			<span class="ok">OK</span>
 		</div>
 	{/if}

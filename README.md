@@ -43,5 +43,25 @@ Have fun :)
 
 - Add the mode name to the **end** of the GameMode enum in `enums.ts`
 - Add a case for that mode in the newSeed function in `utils.ts`
-- Add a ModeData object to the modeData modes array in `utils.ts` 
+- Add a ModeData object to the modeData modes array in `utils.ts`
 </details>
+
+## Changes for WorData
+- The word list contains only data-related terms.
+- There is no check against a list of valid words that will never be chosen as solutions.
+- The game name is changed to WorData.
+
+## Repo usage
+Clone the repo and make any changes you want.
+
+The command below will install all the dependencies needed to build and run the game.
+```
+npm install
+```
+
+The command below will build the bundles to serve the game to a web browser.
+```
+npm run build
+```
+
+Other useful commands that npm can run are listed in the package.json file.
