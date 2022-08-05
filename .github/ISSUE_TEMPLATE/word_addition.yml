@@ -3,20 +3,20 @@ description: Suggest an additional word for the game.
 title: "[Word Addition]: "
 labels: "word"
 body:
--type: input
- id: word
- attributes:
-   label: Word to add
-   description: Enter the word you'd like to have added.
- validations:
-   required: true
- -type: dropdown
-  id: placement
-  attributes:
-    label: Placement
-    description: Should this be a word the game can choose for play, or only to validate as a real word?
-    options:
-      - play
-      - validate
-  validations:
-    required: true
+  -type: input
+    id: addword
+    attributes:
+      label: Word to add
+      description: Enter the word you'd like to have added.
+    validations:
+      required: true
+  -type: dropdown
+    id: placement
+    attributes:
+      label: Placement
+      description: Should this be a word the game can choose for play, or only to validate as a real word?
+      options:
+        - play
+        - validate
+    validations:
+      required: true
