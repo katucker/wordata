@@ -10776,6 +10776,16 @@ const words = {
 		"zygon",
 		"zymes",
 		"zymic"
+	],
+	"depart": [
+		"adieu",
+		"adios",
+		"aloha",
+		"later",
+		"leave",
+		"envoi",
+		"finis",
+		"peace"
 	]
 };
 export default words;

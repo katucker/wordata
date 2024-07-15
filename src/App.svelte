@@ -44,7 +44,11 @@
 		localStorage.setItem("mode", `${m}`);
 		window.location.hash = GameMode[m];
 		stats = (JSON.parse(localStorage.getItem(`stats-${m}`)) as Stats) || createDefaultStats(m);
-		word = words.words[seededRandomInt(0, words.words.length, modeData.modes[m].seed)];
+		if (modeData.modes[m].name == "Final") {
+			word = words.depart[seededRandomInt(0, words.depart.length, modeData.modes[m].seed)];
+		} else {
+			word = words.words[seededRandomInt(0, words.words.length, modeData.modes[m].seed)];
+		}
 		let temp: GameState;
 		if (modeData.modes[m].historical === true) {
 			temp = JSON.parse(localStorage.getItem(`state-${m}-h`));
